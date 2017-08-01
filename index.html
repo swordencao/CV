@@ -1,0 +1,199 @@
+---
+layout: null
+permalink: /
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>CV-{{ site.data.my_information.first_name }}_{{ site.data.my_information.last_name }}</title>
+
+  <link rel="shortcut icon" href="/img/favicon.ico">
+
+  <!-- Normalize or reset CSS with your favorite library -->
+  <link rel="stylesheet" href="/css/normalize-3.0.3.css">
+
+  <!-- Load paper.css for happy printing -->
+  <link rel="stylesheet" href="/css/paper.css">
+
+  <!-- Load font-awesome.css for icons -->
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
+
+  <!-- Load my custon.css -->
+  <link rel="stylesheet" href="/css/custom.css">
+
+  <!-- Set page size here: A5, A4 or A3 -->
+  <!-- Set also "landscape" if you need -->
+  <style>@page { size: A4 }</style>
+</head>
+
+<!-- Set "A5", "A4" or "A3" for class name -->
+<!-- Set also "landscape" if you need -->
+<body class="A4">
+
+  <!-- Each sheet element should have the class "sheet" -->
+  <!-- "padding-**mm" is optional: you can set 10, 15, 20 or 25 -->
+  <section class="sheet padding-20mm">
+
+    <!-- Write HTML just like a web page -->
+    <article>
+      <div class="information">
+        <div class="basic_information">
+          <h1 class="cv_name">{{ site.data.my_information.first_name }} {{ site.data.my_information.last_name }}</h1>
+          <h2 class="cv_title"  >{{ site.data.my_information.job_title }}</h2>
+          <ul class="basic_info">
+            <li>&bull;&emsp;Age: {{ site.data.my_information.age }}&emsp;</li>
+            <li>&bull;&emsp;Gender: {{ site.data.my_information.gender }}&emsp;</li><br>
+            <li>&bull;&emsp;Nationality: {{ site.data.my_information.nationality }}&emsp;</li>
+            <li>&bull;&emsp;Degree: {{ site.data.my_information.degree }}&emsp;</li>
+          </ul>
+        </div>
+        <div class="social_information">
+          <ul style="list-style: none;float: left;">
+            <li><i class="fa fa-github"></i></li>
+            <li><i class="fa fa-map-marker"></i></li>
+            <li><i class="fa fa-envelope"></i></li>
+            <li><i class="fa fa-phone"></i></li>
+            <li><i class="fa fa-globe"></i></li>
+          </ul>
+          <ul style="list-style: none;float: right;">
+            <li>{{ site.data.my_information.github_username }}</li>
+            <li>{{ site.data.my_information.address }}</li>
+            <li>{{ site.data.my_information.email }}</li>
+            <li>{{ site.data.my_information.phone }}</li>
+            <li>{{ site.data.my_information.website }}</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="summary">
+        <i class="fa fa-info-circle fa-lg"></i> <p class="item">Summary</p>
+        <hr>
+        <span style="line-height: 7mm;">{{ site.data.my_summary.summary }}</span>
+      </div>
+
+      <div id="work-experience">
+        <i class="fa fa-users fa-lg"></i> <p class="item">Work Experience</p>
+        <hr>
+        {% for work in site.data.my_work %}
+        <div style="height: 35mm;">
+        <div style="float: left;height: 35mm;width: 78%;">
+          <span class="arial-black">{{ work.company }}</span>
+          <span class="trebuchet">({{ work.location }})</span>
+          <span class="trebuchet">{{ work.title }}</span>
+          <br>
+          <span class="degree">{{ work.desc }}</span>
+        </div>
+        <p class="work-fromto">{{ work.fromto }}</p>
+        </div>
+        {% endfor %}
+      </div>
+
+      <div id="education">
+        <i class="fa fa-mortar-board fa-lg"></i> <p class="item">Education</p>
+        <hr>
+        {% for edu in site.data.my_education %}
+        <div style="height: 21mm;">
+        <div style="float: left;height: 21mm;width: 78%;">
+          <span class="arial-black">{{ edu.school }}</span>
+          <span class="trebuchet">{{ edu.location }}</span>
+          <br>
+          <span class="degree">{{ edu.degree }}</span>
+          <span class="arial">{{ edu.curriculum }}</span>
+        </div>
+        <p class="edu-fromto">{{ edu.fromto }}</p>
+        </div>
+        {% endfor %}
+      </div>
+
+    </article>
+
+  </section>
+
+  <!-- second page -->
+  <section class="sheet padding-20mm">
+    <article>
+
+      <div id="language" style="display: inline-block;width: 100%;">
+        <i class="fa fa-commenting fa-lg"></i> <p class="item">Language</p>
+        <hr>
+        {% for lang in site.data.my_language %}
+        <div style="width: 50%;float: left;"><span class="arial-rounded">{{ lang.language }}</span><span class="trebuchet">{{ lang.level }}</span></div>
+        {% endfor %}
+      </div>
+
+      <div id="skills">
+        <i class="fa fa-cogs fa-lg"></i> <p class="item">Skills</p>
+        <hr>
+        <span class="arial-rounded">Program Language:</span><span class="trebuchet">{{ site.data.my_skills.program_language }}</span><br>
+        <span class="arial-rounded">Platform:</span><span class="trebuchet">{{ site.data.my_skills.platform }}</span><br>
+        <span class="arial-rounded">Development:</span><span class="trebuchet">{{ site.data.my_skills.development }}</span><br>
+        <span class="arial-rounded">Technology Stack:</span><span class="trebuchet">{{ site.data.my_skills.stack }}</span><br>
+      </div>
+
+      <div id="project">
+        <i class="fa fa-code fa-lg"></i> <p class="item">Projects at Github</p>
+        <hr>
+        {% for project in site.data.my_project %}
+        <span class="arial-black">{{ project.name }}</span>
+        <span class="trebuchet">{{ project.language }}</span>
+        <br>
+        <span class="degree">{{ project.desc }}</span>
+        <br>
+        {% endfor %}
+      </div>
+
+      <div id="research">
+        <i class="fa fa-institution fa-lg"></i> <p class="item">Research</p>
+        <hr>
+        <ul>
+          {% for research in site.data.my_research %}
+          <li><span class="arial-rounded">{{ research.name }}</span><span class="trebuchet">{{ research.details }}</span></li>
+          {% endfor%}
+        </ul>
+      </div>
+
+      <div id="language" style="display: inline-block;width: 100%;">
+        <i class="fa fa-book fa-lg"></i> <p class="item">Training</p>
+        <hr>
+        {% for training in site.data.my_training %}
+        <div style="height: 21mm;">
+        <div style="float: left;height: 21mm;width: 78%;">
+          <span class="arial-black">{{ training.topic }}</span>
+          <span class="trebuchet">{{ training.site }}</span>
+          <br>
+          <span class="arial-rounded">Description:</span><span class="arial">{{ training.desc }}</span>
+          <br>
+          <span class="arial-rounded">Key words:</span><span class="arial">{{ training.key_words }}</span>
+        </div>
+        <p class="edu-fromto">{{ training.fromto }}</p>
+        </div>
+        {% endfor %}
+      </div>
+
+    </article>
+  </section>
+
+  <!-- if two pages are not enough for you, please cut/paste some sections to this page
+  <section class="sheet padding-20mm">
+    <article>
+
+    </article>
+  </section>
+  -->
+  <a href="/cn/" style="position: fixed;right: 20px; top: 10px;color: white;text-decoration: none;">中文</a>
+</body>
+
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?{{ site.ba.uuid }}";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+</html>

@@ -1,0 +1,34 @@
+# My work
+
+- company: WuxiNextCODE
+  company-cn: 明码生物科技
+  location: Shanghai, China
+  location-cn: 中国，上海
+  title: Python Developer
+  title-cn: Python工程师
+  fromto: 2016-4 ~ Now
+  fromto-cn: 2016-4 ~ 至今
+  desc: WuxiNextCODE is a international gene company, it's subcompany of WuXi AppTec. I build website with Python/Django, html, css, AngularJS/ jQuery/VueJS. I use Fabric to deploy code on cloud servers and use docker to deploy code on internal servers.
+  desc-cn: 明码生物科技是药明康德的全资子公司。作为核心开发者，我参与公司基因测序自动化系统的开发，实现单个测序时间从5天减少到2天，大大减少人工成本；带领3人小组实现微信公众平台微商城开发，实现支付接口，订单、样本状态变更和CMS后台系统开发等。使用到Django/Celery/Fabric/MySQL/Redis/AngularJS/jQuery/Bootstrap。
+
+- company: Netease Game
+  company-cn: 网易游戏
+  location: Shanghai, China
+  location-cn: 中国，上海
+  title: Devops
+  title-cn: 运维开发
+  fromto: 2015-6 ~ 2016-1
+  fromto-cn: 2015-6 ~ 2016-1
+  desc: Netease is a very big game company in China, my department is cooperation department of Blizzard Entertainment, my colleagues and I built automatization systems with Python/Django/jQuery to realize managing servers for ops team.
+  desc-cn: 在网易游戏暴雪合作部任职期间，我参与自动化发布系统开发，系统实现管理多台服务器资源，自动化发布、回滚APP和网站项目，极大减少人工失误，系统使用Django实现。在网易魔兽争霸平台项目中参与系统构建，使用saltstack实现批量管理服务器和代码发布。
+
+- company: Ucloud
+  company-cn: Ucloud
+  location: Shanghai, China
+  location-cn: 中国，上海
+  title: Devops
+  title-cn: 运维开发
+  fromto: 2013-9 ~ 2015-3
+  fromto-cn: 2013-9 ~ 2015-3
+  desc: Ucloud is one of the most competitive Cloud computing company in China, my daily work is to manage mass cloud servers with powerful tools like saltstack/ansible and shell/Python script, besides I am a member of CMDB develop team.
+  desc-cn: 在Ucloud运维中心担任运维开发工程师期间，我大量使用saltstack和Python/Shell脚本管理数百台服务器，并参与开发公司CMDB系统。期间使我对工作更加严谨并加强了我对云计算运维的认识。
