@@ -1,0 +1,23 @@
+# Welcome to Jekyll!
+
+# Website settings
+title: Jalpc
+description: My CV at http://cv.jarrekk.com
+keywords: Jack,jiakun,jia,kun,cv,resume
+baseurl:
+url: http://cv.jarrekk.com
+# url: http://127.0.0.1:4000
+
+# baidu analytics
+ba:
+  uuid: 317acca9ef9255b934e46371e471431d
+
+# Build settings
+encoding: utf-8
+
+# other settings
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge

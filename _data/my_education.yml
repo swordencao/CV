@@ -1,0 +1,21 @@
+# My education
+
+- school: Nanjing Institute of Technology
+  school-cn: 南京工程学院
+  location: Nanjing, Jiangsu, China
+  location-cn: 中国，江苏，南京
+  degree: Bachlor
+  degree-cn: 学士
+  curriculum: Thermal Energy and Power Engineering
+  curriculum-cn: 热能与动力工程
+  fromto: 2008-9 ~ 2013-7
+
+- school: Suzhou High School
+  school-cn: 江苏省苏州中学
+  location: Suzhou, Jiangsu, China
+  location-cn: 中国，江苏，苏州
+  degree: Senior High School
+  degree-cn: 高中
+  curriculum:
+  curriculum-cn:
+  fromto: 2005-9 ~ 2008-7

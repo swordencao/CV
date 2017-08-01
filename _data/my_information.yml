@@ -1,0 +1,21 @@
+# My information
+
+first_name: 'Kun'
+first_name-cn: 坤
+last_name: 'Jia'
+last_name-cn: '贾'
+job_title: 'Python developer'
+job_title-cn: 'Python工程师'
+age: 28
+gender: 'Male'
+gender-cn: '男'
+github_username: 'jarrekk'
+address: 'Pudong new area, Shanghai, China'
+address-cn: '中国，上海，浦东新区'
+email: 'me@jarrekk.com'
+phone: '+86 18916691387'
+website: 'http://www.jarrekk.com'
+nationality: 'China'
+nationality-cn: '中国'
+degree: 'Bachlor'
+degree-cn: '学士'

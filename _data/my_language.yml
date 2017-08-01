@@ -1,0 +1,11 @@
+# My language
+
+- language: English
+  language-cn: 英语
+  level: Fluent
+  level-cn: 流利
+
+- language: Mandarin
+  language-cn: 普通话
+  level: Native speaker
+  level-cn: 母语
